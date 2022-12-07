@@ -1,0 +1,204 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* background: linear-gradient(#141e30, #243b55); */
+	background: #141e30;
+}
+
+h1{
+  color: #03e9f4;
+  font-size: 26px;
+  font-weight: 700;
+  padding: 20px 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-shadow: 0.5px 0.5px 1px #fff;
+}
+
+#sidebar {
+  float: left;
+  width: 18em;
+  font-size: 16px;
+  font-weight: 400;
+  list-style: none;
+  padding: 13px 0 0 45px;
+	margin-top: 10rem;
+  height: 32rem;
+  border-right: 1px solid #eee;
+}
+
+#sidebar h3 {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 35px 0 10px 0;
+  letter-spacing: 1px;
+  clear: both;
+}
+
+.checklist {
+  padding-top: 10px;
+}
+
+.checklist label {
+  color: #03e9f4;
+  text-shadow: 0.2px 0.5px 0.1px #fff;
+  font-family: sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  padding-left: 10px;
+}
+
+#priceRange label {
+  width: 75px;
+  color: #fff;
+  font-family: sans-serif;
+  font-weight: bold;
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+#priceRange input[type="number"] {
+  background: transparent;
+  color: #03e9f4;
+  border: 0;
+  outline: 0;
+  margin-top: 8px;
+  padding: 2px 2px 2px 8px;
+  height: 35px;
+  width: 66px;
+  border: #03e9f4 2px dotted;
+  border-radius: 5px;
+}
+
+#priceRange input[type="button"] {
+  background: transparent;
+  border: 2px solid #03e9f4;
+  color: #03e9f4;
+  font-size: 15px;
+  width: 80%;
+  padding: 10px;
+  border-radius: 20px;
+  outline: 0;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+#priceRange input[type="button"]:hover {
+  background: #03e9f4;
+  color: #fff;
+  font-weight: bold;
+  text-shadow: rgb(0, 0, 0, 0.5) 1px 2px 2px;
+  box-shadow: 0px 0px 5px 1px #03e9f4;
+  cursor: pointer;
+}
+
+#grid {
+  position: absolute;
+  left: 25em;
+  top: 4.7em;
+}
+
+.product {
+  position: relative;
+  display: flex;
+  width: 300px;
+  height: 400px;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 16px;
+  background: rgba(255, 255, 255, 0.08);
+	/* background-color: #0c121d; */
+  box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(5px);
+  float: left;
+  margin-right: 23px;
+  -webkit-transition: width 500ms ease-in-out;
+  -moz-transition: width 500ms ease-in-out;
+  -ms-transition: width 500ms ease-in-out;
+  -o-transition: width 500ms ease-in-out;
+  transition: width 500ms ease-in-out;
+}
+
+.product .info {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: 0.2s;
+}
+.product:hover .info {
+  transform: translateY(-20px);
+}
+
+.product .info .imgBx {
+  position: relative;
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  border: 10px solid rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  opacity: 0.5;
+  transition: 0.2s;
+}
+.product:hover {
+  transform: rotateY(10deg) translateY(-20px);
+  transition: 0.5s;
+  transition-delay: 0s;
+}
+.product:hover .info .imgBx {
+  opacity: 1;
+}
+.product .info .imgBx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.product .info h4 {
+  color: rgb(0, 0, 0, 0.8);
+  text-shadow: 1px 0px 2px #03e9f4;
+  font-size: 24px;
+  text-align: center;
+  margin-top: 10px;
+}
+.product .info .code {
+	font-family: sans-serif;
+	color: rgb(0, 0, 0, 0.3);
+	text-shadow: 1px 1px 1px #03e9f4;
+  font-size: 12px;
+  text-align: center;
+  margin-top: 10px;
+}
+.product .info .price {
+  font-family: sans-serif;
+  color: #eee;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 2px;
+}
+::-webkit-scrollbar{
+  width: 9px;
+}
+::-webkit-scrollbar-thumb{
+  background: gray;
+  border-radius: 0px;
+  box-shadow: inset 2px 2px 2px rgba(255,255,255,.5), inset -2px -2px 2px rgba(0,0,0,.5);
+}
+::-webkit-scrollbar-thumb:hover{
+  background: #03e9f4;
+  box-shadow: inset 2px 2px 2px rgba(255,255,255,.5), inset -2px -2px 2px rgba(0,0,0,.5);
+}
+::-webkit-scrollbar-track{
+  background: #000;
+}

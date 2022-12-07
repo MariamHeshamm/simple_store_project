@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <section>
+        <div class="login-box">
+            <h2>Sign Up</h2>
+            <form id="form" action="login.html">
+               <div class="user-box">
+                    <input type="text" name="name" id="signUpName" onblur="usernameValidation()">
+                    <label for="signUpName">Name</label>
+                    <p id="usernameAlert" class="d-none" style="color:#f00;">you must enter name !!!</p>
+                </div>
+                <div class="user-box">
+                    <input type="text" name="email" id="signUpEmail" onblur="userEmailValidation()" required>
+                    <label for="signUpEmail">Email</label>
+                    <p id="userEmailAlert" class="d-none" style="color:#f00;">name@example.com</p>
+                </div>
+                <div class="user-box">
+                    <input type="password" name="password" id="signUpPass" onblur="userPasswordValidation()" required>
+                    <label for="signUpPass">Password</label>
+                    <p id="userPasswordAlert" class="d-none" style="color:#f00; margin:0px;">you must strenth your
+                        password, from 5 to
+                        15 characters</p>
+                </div>
+                <p class="d-none" style="color:#03e9f4;" id="confirmMsg">Sign Up Completed Successfully</p>
+                <p class="d-none" style="color:#f00; margin-bottom:0px;" id="accountExistMsg">this account already
+                    exists!! Please,Try
+                    another one.</p>
+                <a id="signupBtn" class="btn" onclick="signUp()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    Sign Up
+                </a>
+                <p id="second">you have an account?
+                </p>
+
+                <a href="login.html">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    Log In
+                </a>
+            </form>
+        </div>
+    </section>
+
+    <!-- scripts -->
+    <script src="js/CookiesLibrary.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/main2.js"></script>
+</body>
+
+</html>

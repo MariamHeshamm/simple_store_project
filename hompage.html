@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Home Page</title>
+    <link rel="stylesheet" href="./css/homeStyle.css">
+</head>
+
+<body>
+    <h1 id="welcome"></h1>
+    <div id="wrapper">
+        <div id="sidebar">
+
+            <h3>CATEGORIES</h3>
+            <hr>
+            <br />
+            <div class="checklist">
+                <input class="chexk_item" value="hats" type="checkbox" name="categoriesChecklist"
+                    onclick="ifChecked(this.value , this.checked)" />
+                <label>Hats</label>
+                <br />
+                <input class="chexk_item" value="t-shirts" type="checkbox" name="categoriesChecklist"
+                    onclick="ifChecked(this.value , this.checked)" />
+                <label>T-shirts</label>
+                <br />
+                <input class="chexk_item" value="bags" type="checkbox" name="categoriesChecklist"
+                    onclick="ifChecked(this.value , this.checked)" />
+                <label>Bags</label>
+                <br />
+                <input class="chexk_item" value="Wooden Laser" type="checkbox" name="categoriesChecklist"
+                    onclick="ifChecked(this.value , this.checked)" />
+                <label>Wooden Laser</label>
+                <br />
+            </div>
+
+            <div id="priceRange">
+                <h3>Filter by price</h3>
+                <hr>
+                <br />
+                <br />
+                <label>Minimum Price</label>
+                <input value="0" type="number" name="minPrice" min="0" max="7" maxlength="6" />
+                <br />
+                <br />
+                <label style="margin-right: 7px;">Maximum Price</label>
+                <input value="10000" type="number" name="maxPrice" min="0" max="7" maxlength="6" />
+                <br />
+                <br />
+                <input type="button" name="applyRange" value="Apply Range" onclick='applyPriceRange(this)' />
+            </div>
+            
+            <div id="grid">
+
+            </div>
+        </div>
+        <script src="./js/ProductData.js"></script>
+        <script src="./js/main2.js"></script> 
+        <script src="./js/homeBackEnd.js"></script>
+</body>
+
+</html>
