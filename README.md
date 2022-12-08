@@ -4,23 +4,23 @@
 
 ## Authors
 
-- [Ahmed Mahmoud](https://www.github.com/eng-AhmedMahmoud/)
+- [Ahmed Mahmoud [UI Track]](https://www.github.com/eng-AhmedMahmoud/)
 **Part:**
 *Responsible for Pages CSS Desgin & Participated in implementing the login system  validation and cookies functionalities*
 
-- [Basma Abdelaziz](https://github.com/Basma2022)
+- [Basma Abdelaziz [Mobile Track]](https://github.com/Basma2022)
 **Part**
 *Responsible for most of the login System Backend validation and cookies functionalities*
 
-- [Mariam Hesham](https://github.com/MariamHeshamm)
+- [Mariam Hesham [Mobile Track]](https://github.com/MariamHeshamm)
 **Part:**
 *Responsible for the implementation of the whole product page Design & Backend logic*
 
-- [Sarah Ali](https://github.com/saraali23)
+- [Sarah Ali [Mobile Track]](https://github.com/saraali23)
 **Part:**
 *Responsible for inserting products dynamically into html by getProducts() & Applying price range filtering in the Home page Backend*
 
-- [Yasmine Khaled](https://github.com/yasmeen-khaled)
+- [Yasmine Khaled [Mobile Track]](https://github.com/yasmeen-khaled)
 **Part:**
 *Responsible for filter by category, remove category and if checked (checks if some categories are checked or not) functions in the home page Backend*
 
