@@ -18,7 +18,7 @@ function signUp()
     if(usernameAlert.innerText.length == 0 && userPasswordAlert.innerText.length == 0 && userPasswordAlert.innerText.length==0)
     {
         SetCookie(userEmailInput.value , usernameInput.value + "*" + userPasswordInput.value);
-        location.assign("./login.html");
+        location.assign("./index.html");
     }
 }
 //username validation
